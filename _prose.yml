@@ -1,0 +1,11 @@
+prose:
+    ignore:
+        - /assets
+        - .gitignore
+        - Gemfile
+        - Gruntfile.js
+        - config.rb
+        - favicon.ico
+        - htaccess
+        - package.json
+        - robots.txt
