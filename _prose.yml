@@ -2,6 +2,7 @@ prose:
     ignore:
         - /assets
         - .gitignore
+        - _prose.yml
         - Gemfile
         - Gruntfile.js
         - config.rb
