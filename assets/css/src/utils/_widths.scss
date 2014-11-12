@@ -1,0 +1,244 @@
+/* ==========================================================================
+   Utils.Widths
+   ========================================================================== */
+
+/**
+ * Utility pro definici sirky urcene primarne pro pouziti s mrizkou.
+ * Podpora: 2, 3, 4, 5, 6, 8, 10, 12
+ */
+
+.u-size1of12 {
+    width: 8.3333333% !important;
+}
+
+.u-size1of10 {
+    width: 10% !important;
+}
+
+.u-size1of8 {
+    width: 12.5% !important;
+}
+
+.u-size1of6,
+.u-size2of12 {
+    width: 16.6666666% !important;
+}
+
+.u-size1of5,
+.u-size2of10 {
+    width: 20% !important;
+}
+
+.u-size1of4,
+.u-size2of8,
+.u-size3of12 {
+    width: 25% !important;
+}
+
+.u-size3of10 {
+    width: 30% !important;
+}
+
+.u-size1of3,
+.u-size2of6,
+.u-size4of12 {
+    width: 33.3333333% !important;
+}
+
+.u-size3of8 {
+    width: 37.5% !important;
+}
+
+.u-size2of5,
+.u-size4of10 {
+    width: 40% !important;
+}
+
+.u-size5of12 {
+    width: 41.6666666% !important;
+}
+
+.u-size1of2,
+.u-size2of4,
+.u-size3of6,
+.u-size4of8,
+.u-size5of10,
+.u-size6of12 {
+    width: 50% !important;
+}
+
+.u-size7of12 {
+    width: 58.3333333% !important;
+}
+
+.u-size3of5,
+.u-size6of10 {
+    width: 60% !important;
+}
+
+.u-size5of8 {
+    width: 62.5% !important;
+}
+
+.u-size2of3,
+.u-size4of6,
+.u-size8of12 {
+    width: 66.6666666% !important;
+}
+
+.u-size7of10 {
+    width: 70% !important;
+}
+
+.u-size3of4,
+.u-size6of8,
+.u-size9of12 {
+    width: 75% !important;
+}
+
+.u-size4of5,
+.u-size8of10 {
+    width: 80% !important;
+}
+
+.u-size5of6,
+.u-size10of12 {
+    width: 83.3333333% !important;
+}
+
+.u-size7of8 {
+    width: 87.5% !important;
+}
+
+.u-size9of10 {
+    width: 90% !important;
+}
+
+.u-size11of12 {
+    width: 91.6666666% !important;
+}
+
+
+/**
+ * Responzivni utility sirky.
+ */
+
+@each $breakpoint in $breakpoints {
+    $alias:     nth($breakpoint, 1);
+    $condition: nth($breakpoint, 2);
+
+    @if ($alias != "retina") {
+        @include mq($alias) {
+            .u-size1of12--#{$alias} {
+                width: 8.3333333% !important;
+            }
+
+            .u-size1of10--#{$alias} {
+                width: 10% !important;
+            }
+
+            .u-size1of8--#{$alias} {
+                width: 12.5% !important;
+            }
+
+            .u-size1of6--#{$alias},
+            .u-size2of12--#{$alias} {
+                width: 16.6666666% !important;
+            }
+
+            .u-size1of5--#{$alias},
+            .u-size2of10--#{$alias} {
+                width: 20% !important;
+            }
+
+            .u-size1of4--#{$alias},
+            .u-size2of8--#{$alias},
+            .u-size3of12--#{$alias} {
+                width: 25% !important;
+            }
+
+            .u-size3of10--#{$alias} {
+                width: 30% !important;
+            }
+
+            .u-size1of3--#{$alias},
+            .u-size2of6--#{$alias},
+            .u-size4of12--#{$alias} {
+                width: 33.3333333% !important;
+            }
+
+            .u-size3of8--#{$alias} {
+                width: 37.5% !important;
+            }
+
+            .u-size2of5--#{$alias},
+            .u-size4of10--#{$alias} {
+                width: 40% !important;
+            }
+
+            .u-size5of12--#{$alias} {
+                width: 41.6666666% !important;
+            }
+
+            .u-size1of2--#{$alias},
+            .u-size2of4--#{$alias},
+            .u-size3of6--#{$alias},
+            .u-size4of8--#{$alias},
+            .u-size5of10--#{$alias},
+            .u-size6of12--#{$alias} {
+                width: 50% !important;
+            }
+
+            .u-size7of12--#{$alias} {
+                width: 58.3333333% !important;
+            }
+
+            .u-size3of5--#{$alias},
+            .u-size6of10--#{$alias} {
+                width: 60% !important;
+            }
+
+            .u-size5of8--#{$alias} {
+                width: 62.5% !important;
+            }
+
+            .u-size2of3--#{$alias},
+            .u-size4of6--#{$alias},
+            .u-size8of12--#{$alias} {
+                width: 66.6666666% !important;
+            }
+
+            .u-size7of10--#{$alias} {
+                width: 70% !important;
+            }
+
+            .u-size3of4--#{$alias},
+            .u-size6of8--#{$alias},
+            .u-size9of12--#{$alias} {
+                width: 75% !important;
+            }
+
+            .u-size4of5--#{$alias},
+            .u-size8of10--#{$alias} {
+                width: 80% !important;
+            }
+
+            .u-size5of6--#{$alias},
+            .u-size10of12--#{$alias} {
+                width: 83.3333333% !important;
+            }
+
+            .u-size7of8--#{$alias} {
+                width: 87.5% !important;
+            }
+
+            .u-size9of10--#{$alias} {
+                width: 90% !important;
+            }
+
+            .u-size11of12--#{$alias} {
+                width: 91.6666666% !important;
+            }
+        }
+    }
+}

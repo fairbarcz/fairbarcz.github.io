@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Utils.Layouts
+   ========================================================================== */
+
+/**
+ * Zacatek noveho blokoveho kontextu.
+ * Poskytuje elementy nektere uzitecne vlastnosti. Nezalomi se pod plovouci
+ * prvek. Muze obsahovat plovouci potomky.
+ * Tahle utilita orizne vytekajici obsah. Je-li to problem, je vhodne pouzit
+ * alternativu nize.
+ */
+
+.u-nbfc {
+    overflow: hidden !important;
+}
+
+
+/**
+ * Alternativa zacatku noveho blokoveho kontextu.
+ * Utilita vhodna v pripade, kdy nesmi byt vytekajici obsah oriznuty.
+ * 1. Vytvoreni noveho bloku (NBFC).
+ * 2. Zabraneni smrsteni elementu s `table-cell` vlastnosti.
+ * V nekterych prohlizecich se muze rozpadnout v pripade, ze prvek
+ * obsahuje elementy, ktere presahuji jeho sirku.
+ */
+
+.u-nbfc-alt {
+    display: table-cell !important; /* 1 */
+    width: 10000px !important; /* 2 */
+}
+
+
+/**
+ * Plovouci elementy
+ */
+
+.u-pull-left {
+    float: left !important;
+}
+
+.u-pull-right {
+    float: right !important;
+}

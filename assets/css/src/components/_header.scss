@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Components.Header
+   ========================================================================== */
+
+.header {
+    @include rem(padding-top, $base-unit);
+    @include rem(padding-bottom, halve($base-unit));
+
+    @include mq(small-up) {
+        @include rem(padding-top, double($base-unit));
+    }
+
+    @include mq(medium-up) {
+        @include rem(padding-bottom, $base-unit);
+    }
+}
+
+.header__logo {
+    float: left;
+    text-align: left;
+}
+
+.header__links {
+    @include rem(padding-top, $base-unit);
+    text-align: right;
+}

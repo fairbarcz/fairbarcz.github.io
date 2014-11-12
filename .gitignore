@@ -1,0 +1,14 @@
+### OSX ###
+.DS_Store
+
+### Bundler ###
+Gemfile.lock
+
+### Node ###
+node_modules
+
+### SASS ###
+*.sass-cache
+
+### Dploy ###
+dploy.yaml

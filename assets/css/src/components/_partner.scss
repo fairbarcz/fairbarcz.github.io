@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Components.Partner
+   ========================================================================== */
+
+.partners {
+    @include rem(margin-top, $base-unit);
+}
+
+
+.partner {
+    box-shadow: 0 0 0 1px $color-gallery;
+}
+
+.partner__link {
+    display: block;
+    border: none;
+}
+
+.partner__img {
+    display: block;
+}

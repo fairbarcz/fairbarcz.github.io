@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Components.Section
+   ========================================================================== */
+
+.section {
+    @include rem(padding-top, 2.5 * $base-unit);
+    @include rem(padding-bottom, 2.5 * $base-unit);
+
+    @include mq(medium-up) {
+        @include rem(padding-top, 5 * $base-unit);
+        @include rem(padding-bottom, 5 * $base-unit);
+    }
+}
+
+.section--collapse {
+    @include rem(margin-top, - 2.5 * $base-unit);
+    @include rem(margin-bottom, - 2.5 * $base-unit);
+
+    @include mq(medium-up) {
+        @include rem(margin-top, - 5 * $base-unit);
+        @include rem(margin-bottom,  -5 * $base-unit);
+    }
+}
+
+.section--collapse-top {
+    @include rem(margin-top, - 2.5 * $base-unit);
+
+    @include mq(medium-up) {
+        @include rem(margin-top, - 5 * $base-unit);
+    }
+}
+
+.section--collapse-bottom {
+    @include rem(margin-bottom, - 2.5 * $base-unit);
+
+    @include mq(medium-up) {
+        @include rem(margin-bottom,  -5 * $base-unit);
+    }
+}
+
+.section--background {
+    background-color: $color-hawkes-blue;
+}

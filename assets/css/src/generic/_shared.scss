@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Generic.Shared
+   ========================================================================== */
+
+/**
+ * Nastaveni hodnoty `margin-bottom` elementum, od kterych
+ * se ocekava tato spodni mezera.
+ */
+
+address,
+blockquote,
+dl,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul,
+table {
+    margin-bottom: $base-unit;
+}
+
+
+/**
+ * Nastavenim `vertical-align` se odstrani bila mezera pod elementy,
+ * ktera jsou na stranku vlozeny "jen tak". Bezpecnejsi alternativa
+ * k pouziti `display: block;`.
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/**
+ * Sjednoceni vysky radku i pro formularove elementy.
+ */
+
+button,
+input {
+    line-height: $base-line-height / $base-font-size;
+}
+
+
+/**
+ * Povoleni pouze vertikalniho zvetsovani elementu `textarea`.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/**
+ * Zruseni ohraniceni pro fokus stavu elementu, ktere nemohou byt pristupne
+ * pres klavesnici. Tim se zabrani ohraniceni, kdy mohou jeste reagovat
+ * na pointer udalosti.
+ */
+
+[tabindex="-1"]:focus {
+    outline: none !important;
+}

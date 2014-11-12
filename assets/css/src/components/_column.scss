@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Components.Column
+   ========================================================================== */
+
+.column {
+    @include rem(margin-top, 2.5 * $base-unit);
+
+    @include mq(medium-up) {
+        margin-top: 0;
+    }
+}
+
+.column--first {
+    margin-top: 0;
+}
+
+.column--second {
+    @include mq(small-up) {
+        margin-top: 0;
+    }
+}
+
+.column__title {
+    color: $color-white;
+
+    @include mq(medium-up) {
+        @include rem(margin-bottom, double($base-unit));
+    }
+}

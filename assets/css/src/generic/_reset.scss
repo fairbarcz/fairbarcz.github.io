@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Generic.Reset
+   ========================================================================== */
+
+/**
+ * Tenka vrstva nad normalize.css pro lepsi vychozi stav.
+ * Odstraneni nekterych vychozich mezer a ohraniceni konkretnim elementum.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+ol,
+p,
+pre,
+ul {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+iframe {
+    border: 0;
+}

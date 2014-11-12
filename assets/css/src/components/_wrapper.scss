@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Components.Wrapper
+   ========================================================================== */
+
+.wrapper {
+    @include rem(max-width, 1280px);
+    margin: 0 auto;
+    background-color: $color-white;
+    background: $color-white image-url('bg/header@460.jpg') no-repeat 0 0;
+    background-size: 200% auto;
+
+    @media screen and (min-width: 461px) {
+        background-image: image-url('bg/header@600.jpg');
+        background-size: 130% auto;
+    }
+
+    @include mq(small-up) {
+        background-image: image-url('bg/header@800.jpg');
+        background-size: 110% auto;
+    }
+
+    @media screen and (min-width: 801px) {
+        background-image: image-url('bg/header@1000.jpg');
+        background-position: 0 -50px;
+        background-size: 100% auto;
+    }
+
+    @media screen and (min-width: 901px) {
+        background-image: image-url('bg/header@1000.jpg');
+        background-position: 0 -80px;
+    }
+
+    @include mq(medium-up) {
+        background-image: image-url('bg/header@.jpg');
+        background-size: auto;
+    }
+}

@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Base.Typography
+   ========================================================================== */
+
+/**
+ * Nadpisy 1–6 a jejich absatrakce: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css.
+ */
+
+$heading-size-1:             36px;
+$heading-size-2:             30px;
+$heading-size-3:             22px;
+$heading-size-4:             20px;
+$heading-size-5:             16px;
+$heading-size-6:             13px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+%alpha,
+.alpha {
+    @include rem(font-size, $heading-size-1);
+}
+
+h2,
+%beta
+.beta {
+    @include rem(font-size, $heading-size-2);
+}
+
+h3,
+%gamma,
+.gamma {
+    @include rem(font-size, $heading-size-3);
+}
+
+h4,
+%delta,
+.delta {
+    @include rem(font-size, $heading-size-4);
+}
+
+h5,
+%epsilon,
+.epsilon {
+    @include rem(font-size, $heading-size-5);
+}
+
+h6,
+%zeta,
+.zeta {
+    @include rem(font-size, $heading-size-6);
+}
+
+
+/**
+ * 1. Nastaveni vychozich barev prostrednictvim globalnich promennych.
+ * 2. Vychozi nastaveni chovani odkazu v ruznych stavech.
+ */
+
+a {
+    border-bottom: 1px solid;
+    color: $color-link; /* [1] */
+    text-decoration: none; /* [2] */
+    transition: border, color 0.2s ease;
+}
+
+a:hover,
+a:active {
+    border-color: transparent;
+    color: $color-link-hover; /* [1] */
+    transition: border, color 0.2s ease;
+}
+
+a:focus {
+    outline: 0;
+}
+
+
+/**
+ * Pridani kurzoru otazniku v pripade, ze zkratka zobrazuje dodatecne
+ * informace pri `:hover` stavu.
+ */
+
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+
+
+/**
+ * Zruseni vychozi kurzivy `address` elementu.
+ */
+
+address {
+    font-style: normal;
+}
+
+
+/**
+ * Pretizeni tucneho rezu.
+ */
+
+strong,
+b {
+    font-weight: 400;
+}

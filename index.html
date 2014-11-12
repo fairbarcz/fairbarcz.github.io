@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="no-js" lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FAIR Coffee&amp;Food</title>
+        <meta name="description" content="Kavárna s poctivým jídlem a kulturním zázemím.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:site_name" content="FAIR Coffee&amp;Food">
+        <meta property="og:locale" content="cs_cz">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="FAIR Coffee&amp;Food">
+        <meta property="og:url" content="http://fairbar.cz">
+        <meta property="og:description" content="Kavárna s poctivým jídlem a kulturním zázemím.">
+        <meta property="og:image" content="http://fairbar.cz/assets/img/content/fair.jpg">
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic|Source+Serif+Pro:400,600&amp;subset=latin,latin-ext">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--[if lt IE 9]>
+            <script src="assets/js/vendor/respond-1.4.2.min.js"></script>
+        <![endif]-->
+
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- header -->
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <header class="header  cf" role="banner">
+                <div class="container">
+                    <a class="is-hidden-visually" href="#content">Přejít k obsahu</a>
+                    <div class="header__logo">
+                        <span class="logo">
+                            <img src="assets/img/content/logo.svg" onerror="this.onerror=null;this.src='assets/img/content/logo.png'" alt="Logo FAIR Coffee&amp;Food">
+                        </span>
+                    </div>
+                    <div class="header__navbar">
+                        <div class="navbar">
+                            <div class="navbar__inner">
+                                <div class="navbar__container">
+                                    <button class="navbar__trigger  js-trigger">
+                                        <i></i><span class="is-hidden-visually">Menu</span>
+                                    </button>
+                                </div> <!-- /container -->
+                            </div>
+
+                            <nav class="nav" role="navigation">
+                                <div class="nav__inner">
+                                    <div class="nav__container">
+                                        <ul class="nav__list  list-bare  js-nav">
+                                            <li class="nav__item">
+                                                <a class="nav__link  js-nav-link" href="#uvod" data-number="1">Úvod</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link  js-nav-link" href="#denni-nabidka" data-number="2">Denní nabídka</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link  js-nav-link" href="#kalendar-akci" data-number="3">Kalendář akcí</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link  js-nav-link" href="#stala-nabidka" data-number="4">Stálá nabídka</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link  js-nav-link" href="#spolupracujeme" data-number="5">Spolupracujeme</a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a class="nav__link  js-nav-link" href="#kontakt" data-number="6">Kontakt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav> <!-- /nav -->
+                        </div> <!-- /navbar -->
+                    </div>
+                    <div class="header__links">
+                        <ul class="links  list-bare list-inline">
+                            <li class="links__item">
+                                <a class="links__link links__link--facebook" href="https://www.facebook.com/fairbarcz" title="Přjít na Facebook">
+                                    <span class="links__title">Facebook</span>
+                                    <svg class="svg-icon  is-hidden--medium-up" viewBox="0 0 512 512">
+                                        <path fill="none" d="M 286.96783,455.99972 V 273.53753 h 61.244 l 9.1699,-71.10266 h -70.41246 v -45.39493 c 0,-20.58828 5.72066,-34.61942 35.23496,-34.61942 l 37.6554,-0.0112 V 58.807915 c -6.5097,-0.87381 -28.8571,-2.80794 -54.8675,-2.80794 -54.28803,0 -91.44995,33.14585 -91.44995,93.998125 v 52.43708 h -61.40181 v 71.10266 h 61.40039 v 182.46219 h 73.42707 z"/>
+                                    </svg>
+                                </a>
+                            </li><!--
+                         --><li class="links__item">
+                                <a class="links__link links__link--gplus" href="https://plus.google.com/+FairbarCz" title="Přjít na Google+">
+                                    <span class="links__title">Google+</span>
+                                    <svg class="svg-icon  is-hidden--medium-up" viewBox="0 0 512 512">
+                                        <g transform="matrix(1.5183435,0,0,1.5183435,-132.96848,-113.47295)">
+                                            <path fill="none" d="m 263.2,262.02 -12.355,-9.595 c -3.762,-3.121 -8.91,-7.24 -8.91,-14.779 0,-7.571 5.148,-12.385 9.612,-16.841 14.393,-11.329 28.771,-23.383 28.771,-48.791 0,-26.125 -16.438,-39.866 -24.317,-46.389 h 21.243 l 22.295,-14.008 h -67.548 c -18.535,0 -45.246,4.386 -64.802,20.531 -14.743,12.714 -21.93,30.249 -21.93,46.034 0,26.793 20.576,53.955 56.903,53.955 3.434,0 7.185,-0.337 10.962,-0.688 -1.697,4.128 -3.413,7.565 -3.413,13.4 0,10.64 5.47,17.168 10.29,23.346 -15.434,1.064 -44.252,2.771 -65.498,15.829 -20.229,12.032 -26.389,29.542 -26.389,41.903 0,25.44 23.981,49.135 73.7,49.135 58.965,0 90.176,-32.623 90.176,-64.922 0.01,-23.732 -13.7,-35.41 -28.79,-48.12 z m -44.909,-39.51 c -29.497,0 -42.861,-38.131 -42.861,-61.141 0,-8.959 1.695,-18.206 7.531,-25.43 5.5,-6.879 15.077,-11.344 24.018,-11.344 28.436,0 43.184,38.475 43.184,63.219 0,6.191 -0.682,17.161 -8.566,25.095 -5.516,5.499 -14.742,9.601 -23.306,9.601 z m 0.335,138.156 c -36.679,0 -60.332,-17.547 -60.332,-41.943 0,-24.391 21.93,-32.642 29.479,-35.373 14.389,-4.844 32.909,-5.519 35.999,-5.519 3.428,0 5.143,0 7.871,0.345 26.078,18.555 37.398,27.807 37.398,45.375 0,21.271 -17.494,37.115 -50.415,37.115 z" id="path13-7"/>
+                                            <polygon fill="none" points="349.78,273.703 349.78,239.142 384.245,239.142 384.245,221.987 349.78,221.987 349.78,187.634 332.812,187.634 332.812,221.987 298.517,221.987 298.517,239.142 332.812,239.142 332.812,273.703 "/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li><!--
+                         --><li class="links__item">
+                                <a class="links__link links__link--instagram" href="http://instagram.com/fairbarcz" title="Přjít na Instagram">
+                                    <span class="links__title">Instagram</span>
+                                    <svg class="svg-icon  is-hidden--medium-up" viewBox="0 0 512 512">
+                                        <path fill="none" d="M 366.4272,76.00001 H 145.5754 c -38.3663,0 -69.5753,31.2032 -69.5753,69.57555 v 73.48163 147.3776 c 0,38.3633 31.209,69.5652 69.5753,69.5652 H 366.435 c 38.3611,0 69.5649,-31.2019 69.5649,-69.5652 V 219.04421 145.55217 c -0.013,-38.36066 -31.209,-69.55216 -69.5727,-69.55216 z m 19.9573,41.48604 7.9549,-0.0298 v 7.91868 53.10168 l -60.8151,0.19486 -0.2078,-61.01518 53.068,-0.17017 z M 204.6148,219.04421 c 11.5387,-15.95299 30.24,-26.40861 51.3858,-26.40861 21.146,0 39.8537,10.45562 51.3691,26.40861 7.5041,10.41275 11.9998,23.1637 11.9998,36.94995 0,34.93781 -28.4527,63.36633 -63.3767,63.36633 -34.937,0 -63.3596,-28.42852 -63.3596,-63.36633 0.013,-13.78625 4.4878,-26.5372 11.9816,-36.94995 z m 196.3,147.37508 c 0,19.0355 -15.4708,34.4922 -34.4889,34.4922 H 145.5754 c -19.026,0 -34.4993,-15.4554 -34.4993,-34.4922 V 219.04421 h 53.7409 c -4.6438,11.41428 -7.2509,23.88205 -7.2509,36.94995 0,54.25908 44.152,98.43403 98.4358,98.43403 54.2864,0 98.4332,-44.17624 98.4332,-98.43403 0,-13.06921 -2.6251,-25.53567 -7.2612,-36.94995 h 53.7422 v 147.37508 z"/>
+                                    </svg>
+                                </a>
+                            </li><!--
+                         --><li class="links__item">
+                                <a class="links__link links__link--foursquare" href="https://foursquare.com/v/fair-coffeefood/539a92d5498e50a50d0d57b9" title="Přjít na Foursquare">
+                                    <span class="links__title">Foursquare</span>
+                                    <svg class="svg-icon  is-hidden--medium-up" viewBox="0 0 512.00003 512">
+                                        <path fill="none" d="m 133.14004,56.000022 c -6.31017,-0.01037 -12.41603,2.513925 -16.8859,6.968238 -4.46976,4.454415 -6.98908,10.543364 -7.0007,16.853538 l -0.58339,352.303842 c -0.0301,9.83707 6.1712,18.82576 15.36265,22.33088 9.19155,3.50481 19.82193,0.90926 26.3498,-6.44977 l 104.4272,-117.65055 74.47957,0 c 5.4228,0.0104 10.7091,-1.86021 14.94136,-5.25063 4.23206,-3.39031 7.1849,-8.12464 8.36195,-13.4179 L 402.76426,85.85028 c 1.56027,-7.021855 -0.1452,-14.442392 -4.63477,-20.062242 -4.48948,-5.620058 -11.3457,-8.948451 -18.53889,-8.977698 L 133.1725,56.000022 z m 27.80843,42.749599 c 0.0104,0 0.0218,0 0.0322,0 l 183.2498,0.58349 c 2.47275,0.0104 4.91635,1.189079 6.45879,3.121789 1.54244,1.93272 2.15217,4.57742 1.61151,6.99033 l -11.42452,51.225 c -0.81768,3.64597 -4.36616,6.48472 -8.10266,6.48213 l -85.19956,0 -0.0643,0 -0.0975,0 c -3.79707,-0.0436 -9.21271,-0.11979 -10.84942,4.95889 -1.52947,4.74585 -6.30395,24.23269 -6.30395,28.06762 0,3.83483 1.5609,7.55961 4.27821,10.24176 2.70693,2.67178 6.42446,4.18383 10.2094,4.14857 0.0104,-2.1e-4 0.0218,1e-4 0.0322,0 0.0643,-6.3e-4 0.17818,0 0.0643,0 0.0322,-2.1e-4 0.0643,-2.1e-4 0.0975,0 l 73.70192,0 c 2.47814,0 4.9314,1.17539 6.48099,3.10924 1.54949,1.93385 2.16337,4.58468 1.62157,7.00288 l -12.10541,54.27149 c -0.80492,3.65769 -4.35733,6.51387 -8.10255,6.5146 l -62.77949,0 c -4.05542,-0.0104 -8.00527,1.7676 -10.72787,4.82923 -0.1454,0.15703 -0.29683,0.30835 -0.45385,0.45365 l -80.10574,91.65503 c 0.0539,-0.15671 0,-275.35858 0,-275.35858 4.2e-4,-4.34427 4.13405,-8.29671 8.47832,-8.29712 z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul> <!-- /links -->
+                    </div>
+                </div> <!-- /container -->
+            </header> <!-- /header -->
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- main -->
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <main class="main" role="main">
+                <article class="content" id="content">
+                    <section class="section  js-section" id="uvod">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="grid__item">
+                                    <h1 class="title">Dobroty podávané s&nbsp;úsměvem a&nbsp;láskou</h1>
+                                    <p class="lead">Za posledních šest let jsme si velmi vytříbili naše chutě a&nbsp;zvykli si na&nbsp;dobrou a&nbsp;poctivou kávu. Stejně tak jsme přirozenou cestou poznávání a&nbsp;objevování došli ke&nbsp;kvalitním potravinám. Přemýšlíme nad tím, co a&nbsp;proč jíme a&nbsp;máme potřebu tento návyk předávat dál.</p>
+                                </div>
+                            </div> <!-- /hero -->
+                        </div> <!-- /container -->
+                    </section> <!-- /section -->
+                    <section>
+                        <div class="slick  js-slick">
+                            <div class="slick__item"><img src="assets/img/content/carousel/slide1.jpg" alt="Domácí vafle s borůvkami a zakysanou smetanou"></div>
+                            <div class="slick__item"><img data-lazy="assets/img/content/carousel/slide2.jpg" alt="Káva doubleshot a sladké dobroty"></div>
+                            <div class="slick__item"><img data-lazy="assets/img/content/carousel/slide3.jpg" alt="Adéla a Oskar Illy"></div>
+                            <div class="slick__item"><img data-lazy="assets/img/content/carousel/slide4.jpg" alt="Domácí sýrová pizza"></div>
+                            <div class="slick__item"><img data-lazy="assets/img/content/carousel/slide5.jpg" alt="Adéla Illy s kávou doubleshot a sladkými dobrotami"></div>
+                            <div class="slick__item"><img data-lazy="assets/img/content/carousel/slide6.jpg" alt="Káva doubleshot jak jí servíruje FAIR Coffee&amp;Food"></div>
+                            <div class="slick__item"><img src="assets/img/content/carousel/slide7.jpg" alt="Zahrádka před kavárnou FAIR Coffee&amp;Food"></div>
+                        </div> <!-- /slick -->
+                    </section> <!-- /section -->
+                    <section class="section  js-section" id="denni-nabidka">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="grid__item  u-size1of3--medium-up">
+                                    <h2 class="subtitle">Denní nabídka</h2>
+                                </div><!--
+                             --><div class="grid__item  u-size2of3--medium-up">
+                                    <p class="u-margin-bn">Ve středu <strong>zeleninová polévka s&nbsp;pohankou</strong> a&nbsp;<strong>špenátová</strong>. Ve středu i&nbsp;ve&nbsp;čtvrtek se můžete těšit na&nbsp;domácí chléb z kvásku. Jako sladké připravíme bio šátečky s&nbsp;jablky, marmeládou a&nbsp;ořechy.<br> Užijte si den a&nbsp;(s)mějte se krásně!</p>
+                                </div>
+                            </div> <!-- /grid -->
+                        </div> <!-- /container -->
+                    </section> <!-- /section -->
+                    <section class="section section--background  js-section" id="kalendar-akci">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="grid__item  u-size1of3--medium-up">
+                                    <h2 class="subtitle">Kalendář akcí</h2>
+                                </div><!--
+                             --><div class="grid__item  u-size2of3--medium-up">
+                                    <div class="event">
+                                        <div class="grid">
+                                            <div class="grid__item  u-size1of4--small-up">
+                                                <time class="event__date" datetime="2014-11-11T18:45:00+00:00">11. listopad 2014</time>
+                                            </div><!--
+                                         --><div class="grid__item  u-size3of4--small-up">
+                                                <h3 class="event__title"><a href="https://www.facebook.com/events/851527978211709" title="Přejít na Facebook událost">Literární úterky</a></h3>
+                                                <p class="event__desc">Vzájemná inspirativní čtení.</p>
+                                            </div>
+                                        </div> <!-- /grid -->
+                                    </div> <!-- /event -->
+                                    <div class="event">
+                                        <div class="grid">
+                                            <div class="grid__item  u-size1of4--small-up">
+                                                <time class="event__date" datetime="2014-11-12T17:30:00+00:00">12. listopad 2014</time>
+                                            </div><!--
+                                         --><div class="grid__item  u-size3of4--small-up">
+                                                <h3 class="event__title"><a href="https://www.facebook.com/events/478036689000875" title="Přejít na Facebook událost">Závazně-nezávazná lekce francouzštiny</a></h3>
+                                                <p class="event__desc">Marek Sittek sedm let žil a působil ve Francii, je to veselá kopa a těší se na příjemná naučná setkávání. Maximum účastníků je 8 a společná odměna účastníků lektorovi je 200 Kč.</p>
+                                            </div>
+                                        </div> <!-- /grid -->
+                                    </div> <!-- /event -->
+                                    <div class="event">
+                                        <div class="grid">
+                                            <div class="grid__item  u-size1of4--small-up">
+                                                <time class="event__date" datetime="2014-11-14T17:00:00+00:00">14. listopad 2014</time>
+                                            </div><!--
+                                         --><div class="grid__item  u-size3of4--small-up">
+                                                <h3 class="event__title"><a href="https://www.facebook.com/events/1523213651257609" title="Přejít na Facebook událost">Sushi večer</a></h3>
+                                                <p class="event__desc">Opět koupíme čerstvého lososa, avokáda, okurky, řasy NORI, wasabi, nakládaný zázvor a sojovou omáčku - a začnou se dít věci. Varianty s lososem i bez lososa. Cena 130 Kč za 8 válečků. Minulá akce měla veliký úspěch, proto tentokrát nabízíme i rozvoz. V 19 hodin uděláme kolečko po Karviné a naše sushi rozvezeme, stačí nám do čtvrtečního večera napsat zprávu na Facebook nebo sms na <a href="tel:+420739651395">739&nbsp;651&nbsp;395</a> kolik porcí a na jakou adresu máme přivézt. Doprava ani obalový materiál se u nás neplatí.</p>
+                                            </div>
+                                        </div> <!-- /grid -->
+                                    </div> <!-- /event -->
+                                    <div class="event">
+                                        <div class="grid">
+                                            <div class="grid__item  u-size1of4--small-up">
+                                                <time class="event__date" datetime="2014-11-15T15:00:00+00:00">15. listopad 2014</time>
+                                            </div><!--
+                                         --><div class="grid__item  u-size3of4--small-up">
+                                                <h3 class="event__title"><a href="https://www.facebook.com/events/1508183629451509" title="Přejít na Facebook událost">Bring your own food</a></h3>
+                                                <p class="event__desc">Těšíme se na společný piknik, proto neváhejte donést do FAIRU jakýkoliv vzorek něčeho Vámi ukuchtěného a dobrého, budeme se společně radovat a inspirovat. Třeba nám přidáte další položky do jídelníčku. Ve FAIRU budou připraveny například ochutnávky pomazánek a sladkých dobrot.</p>
+                                            </div>
+                                        </div> <!-- /grid -->
+                                    </div> <!-- /event -->
+                                    <div class="event">
+                                        <div class="grid">
+                                            <div class="grid__item  u-size1of4--small-up">
+                                                <time class="event__date" datetime="2014-11-21T19:00:00+00:00">21. listopad 2014</time>
+                                            </div><!--
+                                         --><div class="grid__item  u-size3of4--small-up">
+                                                <h3 class="event__title"><a href="https://www.facebook.com/events/1485458325052446" title="Přejít na Facebook událost">Komorní recitál JARO VE FAIRU</a></h3>
+                                                <p class="event__desc">Mladý muž s kytarou představí svou tvorbu.</p>
+                                            </div>
+                                        </div> <!-- /grid -->
+                                    </div> <!-- /event -->
+                                    <div class="event">
+                                        <div class="grid">
+                                            <div class="grid__item  u-size1of4--small-up">
+                                                <time class="event__date" datetime="2014-11-28T19:00:00+00:00">28. listopad 2014</time>
+                                            </div><!--
+                                         --><div class="grid__item  u-size3of4--small-up">
+                                                <h3 class="event__title"><a href="https://www.facebook.com/events/1503861096535492" title="Přejít na Facebook událost">Igor Jelínek opět ve FAIRU</a></h3>
+                                                <p class="event__desc">Již potřetí u nás bude zpívat mladý talentovaný muž, který se specializuje na rusky zpívanou poezii. Vzhledem k velkému zájmu se bude jednat o akci "na stojáka". Symbolické vstupné bude 30 Kč/os.</p>
+                                            </div>
+                                        </div> <!-- /grid -->
+                                    </div> <!-- /event -->
+                                </div>
+                            </div> <!-- /grid -->
+                        </div> <!-- /container -->
+                    </section> <!-- /section -->
+                    <section class="section  js-section" id="stala-nabidka">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="grid__item  u-size1of3--medium-up">
+                                    <h2 class="subtitle">Stálá nabídka</h2>
+                                </div><!--
+                             --><div class="grid__item  u-size2of3--medium-up">
+                                    <p>Cokoliv z naší nabídky Vám rádi zabalíme s sebou. Obalový materiál se u nás neplatí.<br> Můžete objednávat telefonicky a smskou na čísle <a href="tel:+420739651395" title="Zavolat na telefonní číslo"><strong>739&nbsp;651&nbsp;395</strong></a> nebo napsat na email <a href="mailto:illy.adela@gmail.com" title="Napsat email"><strong>illy.adela@gmail.com</strong></a>.</p>
+                                    <p>Těšíme se, že Vám u nás bude chutnat!</p>
+                                    <table class="menu">
+                                        <tbody>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Káva<br><span class="menu__desc">Kávu pro nás praží pražská direct tradová pražírna doubleshot.</span></th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Filtrovaná káva</td>
+                                                <td class="menu__item menu__item--price">35 Kč<br> 3 dcl / 40 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">French Press</td>
+                                                <td class="menu__item menu__item--price">35 Kč<br> 3 dcl / 40 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Espresso / Ristretto</td>
+                                                <td class="menu__item menu__item--price">30 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Cappuccino</td>
+                                                <td class="menu__item menu__item--price">40 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Cafe Latté</td>
+                                                <td class="menu__item menu__item--price">40 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Frappé</td>
+                                                <td class="menu__item menu__item--price">40 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--desc" colspan="2">Smetana, mléko a voda jsou započítány v ceně kávy.</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Nealko</th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Bylinkové limonády dle denní nabídky</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">100% bio mošt<br><span class="menu__desc">studený / teplý</span></td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Fairtradový porcovaný čaj Sonnentor</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Čaj z čerstvých / sušených bylin</td>
+                                                <td class="menu__item menu__item--price">30 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Čaj z čerstvých jablek</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Fairtradové bio kakao</td>
+                                                <td class="menu__item menu__item--price">40 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Dětská kávička</td>
+                                                <td class="menu__item menu__item--price">30 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Mattoni ve skle</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Kofola ve skle</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Alko</th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Kingswood cider</td>
+                                                <td class="menu__item menu__item--price">35 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Carling cider</td>
+                                                <td class="menu__item menu__item--price">35 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Stella alko / nealko</td>
+                                                <td class="menu__item menu__item--price">35 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Víno bílé a červené dle aktuální nabídky</td>
+                                                <td class="menu__item menu__item--price"></td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Bohemia sekt</td>
+                                                <td class="menu__item menu__item--price">1 dcl / 25 Kč<br> láhev / 160 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Svačinky / Snídaně</th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Chlebíček<br><span class="menu__desc">pesto, mozzarella a rajčata</span></td>
+                                                <td class="menu__item menu__item--price">15 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Špenátový toast s mozzarellou a rajčaty</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Sýrový nebo šunkový toast</td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Domácí ostraváček<br><span class="menu__desc">tvaroh, smetana, ovoce</span></td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">FIT tvaroh<br><span class="menu__desc">nízkotučný tvaroh, ovoce, kapky medu</span></td>
+                                                <td class="menu__item menu__item--price">25 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Vaječná omeleta<br><span class="menu__desc">parmazán nebo šunka, zelenina, pečivo</span></td>
+                                                <td class="menu__item menu__item--price">35 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Volské oko<br><span class="menu__desc">2 ks / zelenina, pečivo</span></td>
+                                                <td class="menu__item menu__item--price">30 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Pizza rohlíčky<br><span class="menu__desc">2 ks / šunka s nivou nebo čokoláda</span></td>
+                                                <td class="menu__item menu__item--price">30 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Kuskus slaný<br><span class="menu__desc">zelenina a balkánský sýr</span></td>
+                                                <td class="menu__item menu__item--price">45 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Kuskus sladký<br><span class="menu__desc">jablka, ořechy a zakysaná smetana</span></td>
+                                                <td class="menu__item menu__item--price">45 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Polévky<br><span class="menu__desc">Každý den pro Vás připravujeme dvě polévky, snažíme se přihlížet k sezóně i počasí, jedna z polévek je vždy bezlaktózová. Nepoužíváme masox, vegetu a jiné nezdravé náhražky. Naopak používáme v hojné míře cibuli, luštěniny, brokolici, mrkev, kyselé zelí, rajčata a bylinky.</span></th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Gazpacho<br><span class="menu__desc">španělská studená zeleninová polévka</span></td>
+                                                <td class="menu__item menu__item--price">45 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Další polévky dle denní nabídky</td>
+                                                <td class="menu__item menu__item--price">45 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--desc" colspan="2">Pečivo je započítáno v ceně polévky.</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Saláty</th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Fresh<br><span class="menu__desc">čerstvá zelenina, listová zelenina, mozzarella, krutony, olivový olej, koření</span></td>
+                                                <td class="menu__item menu__item--price">70 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Řecký<br><span class="menu__desc">čerstvá zelenina, černé olivy, kukuřice, balkánský sýr, toast</span></td>
+                                                <td class="menu__item menu__item--price">70 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Sladké dobroty</th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Pšenično-žitné vafle<br><span class="menu__desc">domácí marmeláda a zakysaná smetana (kypřicí prášek bez fosfátu)</span></td>
+                                                <td class="menu__item menu__item--price">35 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Další dobroty dle denní nabídky</td>
+                                                <td class="menu__item menu__item--price"></td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <th class="menu__item menu__item--caption" colspan="2">Naše domácí pizza <br><span class="menu__desc">Pečeme malou, která má &Oslash; 20 cm a velkou, která má &Oslash; 35 cm.<br> Umíme i bezlepkovou pizzu. Pečeme jen malou a cena je 70 Kč. Objednávejte hodinu předem.<br> Na objednávku napečeme i bezlepkové housky.</span></th>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Sýrová<br><span class="menu__desc">drcená rajčata, mozzarella, parmazán, niva, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Špenátová<br><span class="menu__desc">drcená rajčata, špenát, vajíčko, česnek, mozzarella, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Šunková<br><span class="menu__desc">drcená rajčata, šunka, mozzarella, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Žampionová<br><span class="menu__desc">drcená rajčata, šunka, mozzarella, čerstvé žampiony, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Vegetariánská<br><span class="menu__desc">drcená rajčata, veganský sýr nebo mozzarella, zelenina</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Brokolicová<br><span class="menu__desc">drcená rajčata, brokolice, balkánský sýr, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Selská<br><span class="menu__desc">drcená rajčata, kyselé zelí, slanina, cibule, mozzarella, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Mexická<br><span class="menu__desc">drcená rajčata, slanina, fazole, kukuřice, cibule, mozzarella, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Pikantní<br><span class="menu__desc">drcená rajčata, slanina, cibule, feferonky, mozzarella</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                            <tr class="menu__row">
+                                                <td class="menu__item menu__item--name">Řecká<br><span class="menu__desc">smetanový základ, šunka, balkánský sýr, kukuřice, černé olivy, bylinky</span></td>
+                                                <td class="menu__item menu__item--price">60 Kč / 120 Kč</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> <!-- /grid -->
+                        </div> <!-- /container -->
+                    </section> <!-- /section -->
+                    <section class="section section--collapse-top  js-section" id="spolupracujeme">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="grid__item  u-size1of3--medium-up">
+                                    <h2 class="subtitle">Spolupracujeme</h2>
+                                </div><!--
+                             --><div class="grid__item  u-size2of3--medium-up">
+                                    <p>Jsme rádi za všechny šikovné a milé lidi kolem nás, kteří nám pomáhají spoluvytvářet atmosféru a chutě naší kavárny.</p>
+                                </div>
+                            </div> <!-- /grid -->
+                            <div class="partners">
+                                <div class="grid grid--flush">
+                                    <div class="grid__item u-size1of2  u-size1of4--small-up">
+                                        <div class="partner">
+                                            <a class="partner__link" href="http://jaromirkavan.cz" title="Přejít na jaromirkavan.cz">
+                                                <img class="partner__img" src="assets/img/content/partners/kavan.png" alt="Logo webdesignera Jaromíra Kavana">
+                                            </a>
+                                        </div> <!-- /partner -->
+                                    </div><!--
+                                 --><div class="grid__item u-size1of2  u-size1of4--small-up">
+                                        <div class="partner">
+                                            <a class="partner__link" href="http://www.bezmamy.cz" title="Přejít na www.bezmamy.cz">
+                                                <img class="partner__img" src="assets/img/content/partners/bez-mamy.png" alt="Logo občanského sdružení Bez mámy">
+                                            </a>
+                                        </div> <!-- /partner -->
+                                    </div><!--
+                                 --><div class="grid__item u-size1of2  u-size1of4--small-up">
+                                        <div class="partner">
+                                            <a class="partner__link" href="http://skolkabezinka.cz" title="Přejít na skolkabezinka.cz">
+                                                <img class="partner__img" src="assets/img/content/partners/bezinka.png" alt="Logo lesní školy Bezinky">
+                                            </a>
+                                        </div> <!-- /partner -->
+                                    </div><!--
+                                 --><div class="grid__item u-size1of2  u-size1of4--small-up">
+                                        <div class="partner">
+                                            <a class="partner__link" href="http://rawzinka.cz" title="Přejít na rawzinka.cz">
+                                                <img class="partner__img" src="assets/img/content/partners/rawzinka.png" alt="Logo Rawzinky">
+                                            </a>
+                                        </div> <!-- /partner -->
+                                    </div>
+                                </div> <!-- /grid -->
+                            </div> <!-- /partners -->
+                        </div> <!-- /container -->
+                    </section> <!-- /section -->
+                </article> <!-- /content -->
+            </main> <!-- /main -->
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- footer -->
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <footer class="footer  js-section" role="contentinfo" id="kontakt">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__item  u-size1of2--small-up u-size1of3--medium-up">
+                            <div class="column column--first">
+                                <h2 class="column__title  subtitle">Kontakt</h2>
+                                <p>Adéla Illy<br> <a href="tel:+420739651395" title="Zavolat na telefonní číslo">739&nbsp;651&nbsp;395</a><br> <a href="mailto:illy.adela@gmail.com" title="Napsat email">illy.adela@gmail.com</a></p>
+                            </div> <!-- /column -->
+                        </div><!--
+                     --><div class="grid__item  u-size1of2--small-up u-size1of3--medium-up">
+                            <div class="column column--second">
+                                <h2 class="column__title  subtitle">Adresa</h2>
+                                <address>Fryštátská 174,<br> 733 01 Karviná - Fryštát<br> <a href="https://www.google.cz/maps/place/Fry%C5%A1t%C3%A1tsk%C3%A1+174%2F51,+733+01+Karvin%C3%A1/@49.8527322,18.5475543,17z/data=!3m1!4b1!4m2!3m1!1s0x471155599320856d:0xee5382b93003d227" title="Přejít na mapu">Zobrazit na mapě</a></address>
+                            </div> <!-- /column -->
+                        </div><!--
+                     --><div class="grid__item  u-size1of3--medium-up">
+                            <div class="column column--third">
+                                <h2 class="column__title  subtitle">Otevírací doba</h2>
+                                <div class="grid grid--flush">
+                                    <div class="grid__item  u-size1of2">
+                                        <p>Pondělí - Pátek<br> 9:00 - 20:00</p>
+                                    </div><!--
+                                 --><div class="grid__item  u-size1of2">
+                                        <p>Sobota<br> 10:00 - 20:00</p>
+                                    </div>
+                                </div> <!-- /grid -->
+                            </div> <!-- /column -->
+                        </div>
+                    </div> <!-- /grid -->
+                </div> <!-- /container -->
+            </footer> <!-- /footer -->
+
+        </div> <!-- /wrapper -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="assets/js/scripts.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-52003409-1');ga('send','pageview');
+        </script>
+    </body>
+</html>

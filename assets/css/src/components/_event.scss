@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Components.Event
+   ========================================================================== */
+
+.event {
+    @include rem(margin-top, double($base-unit));
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @include mq(medium-up) {
+        @include rem(margin-top, double($base-unit));
+    }
+}
+
+.event__date {
+    @include rem(margin-bottom, quarter($base-unit));
+    @include rem(font-size, 14px);
+    display: block;
+    font-style: italic;
+
+    @include mq(medium-up) {
+        line-height: 2;
+    }
+}
+
+.event__title {
+    @include rem(font-size, 16px);
+    margin-bottom: 0;
+    font-family: $font-source-sans-pro;
+    font-weight: 400;
+
+    @include mq(medium-up) {
+        @include rem(font-size, 18px);
+    }
+}
+
+.event__desc {
+    margin-bottom: 0;
+}

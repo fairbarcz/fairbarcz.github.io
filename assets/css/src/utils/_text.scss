@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Utils.Text
+   ========================================================================== */
+
+/**
+ * Preruseni slova
+ * Preruseni retezce presahuji-li jeho delka sirku kontejneru.
+ */
+
+.u-text-break {
+    word-wrap: break-word !important;
+}
+
+
+/**
+ * Horizontalni zarovnani textu
+ */
+
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-text-left {
+    text-align: left !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+}
+
+.u-text-justify {
+    text-align: justify !important;
+}
+
+
+/**
+ * Transformace textu
+ */
+
+.u-text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.u-text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.u-text-capitalize {
+    text-transform: capitalize !important;
+}
+
+
+/**
+ * Zdedeni barvy rodice.
+ */
+
+.u-text-inherit-color {
+    color: inherit !important;
+}
+
+
+/**
+ * Zabraneni zalomeni bile mezery
+ */
+
+.u-text-no-wrap {
+    white-space: nowrap !important;
+}
+
+
+/**
+ * Oriznuti textu.
+ * Zabraneni textu v zalomeni na dalsi radek a oriznuti s tremi teckami.
+ * 1. Nastaveni maximalni sirky textu.
+ * 2. Oprava pro IE 8/9 ma-li nadrazeny element `word-wrap: break-word`.
+ */
+
+.u-text-truncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}

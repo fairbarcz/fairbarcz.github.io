@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Vars
+   ========================================================================== */
+
+/**
+ * Fonty
+ */
+
+$font-donegal-one:           'Donegal One', sans-serif;
+$font-lato:                  'Lato', sans-serif;
+$font-open-sans:             'Open Sans', sans-serif;
+$font-oswald:                'Oswald', sans-serif;
+$font-roboto-condensed:      'Roboto Condensed', sans-serif;
+$font-roboto-slab:           'Roboto Slab', sans-serif;
+$font-source-sans-pro:       'Source Sans Pro', sans-serif;
+$font-source-serif-pro:      'Source Serif Pro', sans-serif;
+
+
+/**
+ * Zakladni promenne
+ */
+
+$base-font-size:             16px;
+$base-line-height:           24px;
+$base-font-family:           $font-source-sans-pro;
+$base-unit:                  20px;
+$base-radius:                4px;
+
+
+/**
+ * Paleta zakladnich barev
+ */
+
+$color-white:                #ffffff;
+$color-black:                #000000;
+
+$color-gallery:              #ededed;
+$color-dove-gray:            #6f6f6f;
+
+$color-mine-shaft:           #232323;
+
+
+/**
+ * Paleta barev
+ */
+
+$color-whisper:              #f6f6fa;
+$color-hawkes-blue:          #dde2fc;
+$color-melrose:              #b9b5fc;
+$color-lilac-bush:           #a080cf;
+$color-butterfly-bush:       #705391;
+
+
+/**
+ * Paleta barevnych promennych napric projektem
+ */
+
+$color-background:           $color-whisper;
+$color-text:                 $color-dove-gray;
+
+$color-link:                 $color-lilac-bush;
+$color-link-hover:           $color-lilac-bush;
+
+$color-border:               $color-hawkes-blue;
+
+
+/**
+ * Definice breakpointu
+ */
+
+$breakpoints: (
+    "small-only"             "screen and (max-width: 600px)",
+    "small-up"               "screen and (min-width: 601px)",
+    "medium-only"            "screen and (min-width: 601px) and (max-width: 1000px)",
+    "medium-down"            "screen and (max-width: 1000px)",
+    "medium-up"              "screen and (min-width: 1001px)",
+    "large-only"             "screen and (min-width: 1001px) and (max-width: 1280px)",
+    "large-down"             "screen and (max-width: 1280px)",
+    "large-up"               "screen and (min-width: 1281px)",
+    "retina"                 "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+);

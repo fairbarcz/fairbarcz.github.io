@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Objects.Grid
+   ========================================================================== */
+
+/**
+ * Mrizka predpoklada `box-sizing: border-box;` a `display: inline-block;`.
+ * Kombinuje se s utilitami pro definici sirky v souboru `_widths.scss`.
+ */
+
+$grid-gutter:                $base-unit !default;
+$grid-gutter--tiny:          quarter($grid-gutter) !default;
+$grid-gutter--small:         halve($grid-gutter) !default;
+$grid-gutter--large:         double($grid-gutter) !default;
+$grid-gutter--extralarge:    quadruple($grid-gutter) !default;
+
+$grid--tiny:                 false !default;
+$grid--small:                false !default;
+$grid--large:                false !default;
+$grid--extralarge:           true  !default;
+$grid--flush:                true  !default;
+$grid--rev:                  false !default;
+$grid--middle:               false !default;
+$grid--bottom:               false !default;
+$grid--right:                false !default;
+$grid--center:               false !default;
+
+
+.grid {
+    padding: 0;
+    margin:  0;
+    margin-left: -$grid-gutter;
+    list-style: none;
+}
+
+.grid__item  {
+    display: inline-block;
+    width: 100%;
+    padding-left: $grid-gutter;
+    vertical-align: top;
+}
+
+
+/**
+ * Variace mrizky
+ */
+
+@if ($grid--tiny == true) {
+    .grid--tiny {
+        margin-left: -($grid-gutter--tiny);
+
+        > .grid__item {
+            padding-left: $grid-gutter--tiny;
+        }
+    }
+}
+
+@if ($grid--small == true) {
+    .grid--small {
+        margin-left: -($grid-gutter--small);
+
+        > .grid__item {
+            padding-left: $grid-gutter--small;
+        }
+    }
+}
+
+@if ($grid--large == true) {
+    .grid--large {
+        margin-left: -($grid-gutter--large);
+
+        > .grid__item {
+            padding-left: $grid-gutter--large;
+        }
+    }
+}
+
+@if ($grid--extralarge == true) {
+    .grid--extralarge {
+        margin-left: -($grid-gutter--extralarge);
+
+        > .grid__item {
+            padding-left: $grid-gutter--extralarge;
+        }
+    }
+}
+
+@if ($grid--flush == true) {
+    .grid--flush {
+        margin-left: 0;
+
+        > .grid__item {
+            padding-left: 0;
+        }
+    }
+}
+
+@if ($grid--rev == true) {
+    .grid--rev {
+        direction: rtl;
+        text-align: left;
+
+        > .grid__item {
+            direction: ltr;
+            text-align: left;
+        }
+    }
+}
+
+@if ($grid--middle == true) {
+    .grid--middle {
+        > .grid__item {
+            vertical-align: middle;
+        }
+    }
+}
+
+@if ($grid--bottom == true) {
+    .grid--bottom {
+        > .grid__item {
+            vertical-align: bottom;
+        }
+    }
+}
+
+@if ($grid--right == true) {
+    .grid--right {
+        text-align: right;
+
+        > .grid__item {
+            text-align: left;
+        }
+    }
+}
+
+@if ($grid--center == true) {
+    .grid--center {
+        text-align: center;
+
+        > .grid__item {
+            text-align: left;
+        }
+    }
+}

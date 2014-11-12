@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Utils.States
+   ========================================================================== */
+
+/**
+ * Naznaceni interakce s rozhranim nastavenim prislusneho kurzoru.
+ */
+
+.is-actionable {
+    cursor: pointer !important;
+}
+
+.is-disabled {
+    cursor: default !important;
+}
+
+.is-draggable {
+    cursor: move !important;
+}
+
+
+/**
+ * Kompletni odstraneni z toku dokumentu i pro ctecky.
+ */
+
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
+/**
+ * Zobrazeni kompletne odstraneneho elementu.
+ */
+
+.is-shown {
+    display: block !important;
+    visibility: visible !important;
+}
+
+
+/**
+ * Responzivni utility umoznujici skryvani a zobrazovani textu
+ * v rozmezich definovanych jednotlivymi breakpointy.
+ */
+
+ @each $breakpoint in $breakpoints {
+    $alias:     nth($breakpoint, 1);
+    $condition: nth($breakpoint, 2);
+
+    @if ($alias != "retina") {
+        @include mq($alias) {
+            .is-hidden--#{$alias} {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            .is-shown--#{$alias} {
+                display: block !important;
+                visibility: visible !important;
+            }
+        }
+    }
+}
+
+
+/**
+ * Kompletni odstraneni z toku dokumentu ale zachovani pro ctecky.
+ */
+
+.is-hidden-visually {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+
+/**
+ * Uprava viditelnosti bez ovlivneni toku dokumentu.
+ */
+
+.is-invisible {
+    visibility: hidden !important;
+}
+
+.is-visible {
+    visibility: visible !important;
+}

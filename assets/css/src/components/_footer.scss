@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Components.Footer
+   ========================================================================== */
+
+.footer {
+    @include rem(padding-top, 2.5 * $base-unit);
+    @include rem(padding-bottom, 1.5 * $base-unit);
+    background-color: $color-butterfly-bush;
+    color: $color-white;
+
+    a {
+        color: $color-white;
+    }
+
+    @include mq(medium-up) {
+        @include rem(padding-top, 5 * $base-unit);
+        @include rem(padding-bottom, 4 * $base-unit);
+    }
+}

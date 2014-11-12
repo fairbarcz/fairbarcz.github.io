@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Utils.Spaces
+   ========================================================================== */
+
+/**
+ * Utility upravujici vychozi mezery mezi komponentami.
+ *
+ * u-<typ>-<smer><velikost>
+ *
+ * a = vsechny mezery
+ * t = horni mezera
+ * r = prava mezera
+ * b = spodni mezera
+ * l = leva mezera
+ * h = horizontalni mezery
+ * v = vertikalni mezery
+ *
+ * n = zadna mezera
+ * t = tiny mezera (ctvrtina zakladni jednotky velikosti)
+ * s = small mezera (polovina zakladni jednotky velikosti)
+ * m = medium mezera (zakladni jednotka velikosti)
+ * l = large mezera (dvojnasobek zakladni jednotky velikosti)
+ * xl = extralarge mezera (ctyrnasobek zakladni jednotky velikosti)
+ */
+
+/* Vsechny mezery */
+
+.u-padding-an  { padding: 0 !important; }
+.u-padding-at  { padding: quarter($base-unit) !important; }
+.u-padding-as  { padding: halve($base-unit) !important; }
+.u-padding-am  { padding: $base-unit !important; }
+.u-padding-al  { padding: double($base-unit) !important; }
+.u-padding-axl { padding: quadruple($base-unit) !important; }
+
+.u-margin-an   { margin: 0 !important; }
+.u-margin-at   { margin: quarter($base-unit) !important; }
+.u-margin-as   { margin: halve($base-unit) !important; }
+.u-margin-am   { margin: $base-unit !important; }
+.u-margin-al   { margin: double($base-unit) !important; }
+.u-margin-axl  { margin: quadruple($base-unit) !important; }
+
+
+/* Vertikalni mezery */
+
+.u-padding-vn  { padding-top: 0 !important; padding-bottom: 0 !important; }
+.u-padding-vt  { padding-top: quarter($base-unit) !important; padding-bottom: quarter($base-unit) !important; }
+.u-padding-vs  { padding-top: halve($base-unit) !important; padding-bottom: halve($base-unit) !important; }
+.u-padding-vm  { padding-top: $base-unit !important; padding-bottom: $base-unit !important; }
+.u-padding-vl  { padding-top: double($base-unit) !important; padding-bottom: double($base-unit) !important; }
+.u-padding-vxl { padding-top: quadruple($base-unit) !important; padding-bottom: quadruple($base-unit) !important; }
+
+.u-margin-vn   { margin-top: 0 !important; margin-bottom: 0 !important; }
+.u-margin-vt   { margin-top: quarter($base-unit) !important; margin-bottom: quarter($base-unit) !important; }
+.u-margin-vs   { margin-top: halve($base-unit) !important; margin-bottom: halve($base-unit) !important; }
+.u-margin-vm   { margin-top: $base-unit !important; margin-bottom: $base-unit !important; }
+.u-margin-vl   { margin-top: double($base-unit) !important; margin-bottom: double($base-unit) !important; }
+.u-margin-vxl  { margin-top: quadruple($base-unit) !important; margin-bottom: quadruple($base-unit) !important; }
+
+
+/* Horizontalni mezery */
+
+.u-padding-hn  { padding-right: 0 !important; padding-left: 0 !important; }
+.u-padding-ht  { padding-right: quarter($base-unit) !important; padding-left: quarter($base-unit) !important; }
+.u-padding-hs  { padding-right: halve($base-unit) !important; padding-left: halve($base-unit) !important; }
+.u-padding-hm  { padding-right: $base-unit !important; padding-left: $base-unit !important; }
+.u-padding-hl  { padding-right: double($base-unit) !important; padding-left: double($base-unit) !important; }
+.u-padding-hxl { padding-right: quadruple($base-unit) !important; padding-left: quadruple($base-unit) !important; }
+
+.u-margin-hn   { margin-right: 0 !important; margin-left: 0 !important; }
+.u-margin-ht   { margin-right: quarter($base-unit) !important; margin-left: quarter($base-unit) !important; }
+.u-margin-hs   { margin-right: halve($base-unit) !important; margin-left: halve($base-unit) !important; }
+.u-margin-hm   { margin-right: $base-unit !important; margin-left: $base-unit !important; }
+.u-margin-hl   { margin-right: double($base-unit) !important; margin-left: double($base-unit) !important; }
+.u-margin-hxl  { margin-right: quadruple($base-unit) !important; margin-left: quadruple($base-unit) !important; }
+
+
+/* Horni mezery */
+
+.u-padding-tn  { padding-top: 0 !important; }
+.u-padding-tt  { padding-top: quarter($base-unit) !important; }
+.u-padding-ts  { padding-top: halve($base-unit) !important; }
+.u-padding-tm  { padding-top: $base-unit !important; }
+.u-padding-tl  { padding-top: double($base-unit) !important; }
+.u-padding-txl { padding-top: quadruple($base-unit) !important; }
+
+.u-margin-tn   { margin-top: 0 !important; }
+.u-margin-tt   { margin-top: quarter($base-unit) !important; }
+.u-margin-ts   { margin-top: halve($base-unit) !important; }
+.u-margin-tm   { margin-top: $base-unit !important; }
+.u-margin-tl   { margin-top: double($base-unit) !important; }
+.u-margin-txl  { margin-top: quadruple($base-unit) !important; }
+
+
+/* Dolni mezery */
+
+.u-padding-bn  { padding-bottom: 0 !important; }
+.u-padding-bt  { padding-bottom: quarter($base-unit) !important; }
+.u-padding-bs  { padding-bottom: halve($base-unit) !important; }
+.u-padding-bm  { padding-bottom: $base-unit !important; }
+.u-padding-bl  { padding-bottom: double($base-unit) !important; }
+.u-padding-bxl { padding-bottom: quadruple($base-unit) !important; }
+
+.u-margin-bn   { margin-bottom: 0 !important; }
+.u-margin-bt   { margin-bottom: quarter($base-unit) !important; }
+.u-margin-bs   { margin-bottom: halve($base-unit) !important; }
+.u-margin-bm   { margin-bottom: $base-unit !important; }
+.u-margin-bl   { margin-bottom: double($base-unit) !important; }
+.u-margin-bxl  { margin-bottom: quadruple($base-unit) !important; }
+
+
+/* Leve mezery */
+
+.u-padding-ln  { padding-left: 0 !important; }
+.u-padding-lt  { padding-left: quarter($base-unit) !important; }
+.u-padding-ls  { padding-left: halve($base-unit) !important; }
+.u-padding-lm  { padding-left: $base-unit !important; }
+.u-padding-ll  { padding-left: double($base-unit) !important; }
+.u-padding-lxl { padding-left: quadruple($base-unit) !important; }
+
+.u-margin-ln   { margin-left: 0 !important; }
+.u-margin-lt   { margin-left: quarter($base-unit) !important; }
+.u-margin-ls   { margin-left: halve($base-unit) !important; }
+.u-margin-lm   { margin-left: $base-unit !important; }
+.u-margin-ll   { margin-left: double($base-unit) !important; }
+.u-margin-lxl  { margin-left: quadruple($base-unit) !important; }
+
+
+/* Prave mezery */
+
+.u-padding-rn  { padding-right: 0 !important; }
+.u-padding-rt  { padding-right: quarter($base-unit) !important; }
+.u-padding-rs  { padding-right: halve($base-unit) !important; }
+.u-padding-rm  { padding-right: $base-unit !important; }
+.u-padding-rl  { padding-right: double($base-unit) !important; }
+.u-padding-rxl { padding-right: quadruple($base-unit) !important; }
+
+.u-margin-rn  { margin-right: 0 !important; }
+.u-margin-rt  { margin-right: quarter($base-unit) !important; }
+.u-margin-rs  { margin-right: halve($base-unit) !important; }
+.u-margin-rm  { margin-right: $base-unit !important; }
+.u-margin-rl  { margin-right: double($base-unit) !important; }
+.u-margin-rxl { margin-right: quadruple($base-unit) !important; }

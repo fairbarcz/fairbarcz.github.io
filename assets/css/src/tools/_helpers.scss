@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Tools.Helpers
+   ========================================================================== */
+
+/**
+ * Helper pro prvky obsahujici plovouci elementy.
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+%cf:before,
+%cf:after,
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+%cf:after,
+.cf:after {
+    clear: both;
+}

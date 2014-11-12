@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Utils.Sizes
+   ========================================================================== */
+
+/**
+ * Element se smrsti na sirku sveho obsahu.
+ */
+
+.u-size-fit,
+.u-size-fit-alt {
+    display: block !important;
+    float: left !important;
+    width: auto !important;
+}
+
+.u-size-fit-alt {
+    float: right !important;
+}
+
+
+/**
+ * Element vyplni veskery prostor, kery ma k dispozici.
+ * Tahle utilita orizne vytekajici obsah.
+ */
+
+.u-size-fill {
+    display: block !important;
+    width: auto !important;
+    overflow: hidden !important;
+}
+
+
+/**
+ * Alternativa k predchozi utilite.
+ * Nepouzivat v pripade, ze vnoreny element muze byt sirsi nez je potrebny prostor.
+ * V Chrome, Safari a Firefoxu je vysledkem rozpadly layout.
+ */
+
+.u-size-fill-alt {
+    display: table-cell !important;
+    max-width: 100% !important;
+    width: 10000px !important;
+}
+
+
+/**
+ * Element je tak siroky jako jeho nadrazeny rodic.
+ */
+
+.u-size-full {
+    display: block !important;
+    width: 100% !important;
+}

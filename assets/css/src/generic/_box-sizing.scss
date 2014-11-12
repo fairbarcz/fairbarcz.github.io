@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Generic.Box-Sizing
+   ========================================================================== */
+
+/**
+ * Globalni nastaveni `box-sizing` stavu na `border-box`.
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}

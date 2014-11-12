@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Components.Menu
+   ========================================================================== */
+
+.menu {
+    margin-bottom: 0;
+}
+
+.menu__item {
+    @include rem(padding-top, $base-unit);
+    line-height: 1.2;
+    text-align: left;
+    vertical-align: top;
+
+    .menu__row:first-child & {
+        padding-top: 0;
+    }
+}
+
+.menu__item--caption {
+    @include rem(padding-top, 1.5 * $base-unit);
+    @include rem(padding-bottom, halve($base-unit));
+    border-bottom: 3px double $color-border;
+    color: $color-mine-shaft;
+    font-family: $font-source-sans-pro;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: $base-line-height / $base-font-size;
+    text-transform: uppercase;
+
+    .menu__row:first-child & {
+        padding-top: 0;
+    }
+}
+
+.menu__item--name {
+    @include rem(padding-right, $base-unit);
+    width: 100%;
+
+    @include mq(medium-up) {
+        @include rem(padding-right, double($base-unit));
+    }
+}
+
+.menu__item--desc {
+    @include rem(padding-top, $base-unit);
+    @include rem(font-size, 14px);
+    font-style: italic;
+    line-height: 1.3;
+
+    @include mq(medium-up) {
+        @include rem(font-size, 14px);
+    }
+}
+
+.menu__desc {
+    @include rem(font-size, 14px);
+    display: inline-block;
+    color: $color-text;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.3;
+    text-transform: none;
+
+    .menu__item--caption & {
+        padding-top: 0;
+        font-style: normal;
+
+        @include mq(medium-up) {
+            @include rem(font-size, 16px);
+        }
+    }
+
+    // @include mq(medium-up) {
+    //     @include rem(font-size, 14px);
+    // }
+}
+
+.menu__item--price {
+    text-align: right;
+    white-space: nowrap;
+}

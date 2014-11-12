@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Components.Links
+   ========================================================================== */
+
+.links {
+    font-family: $font-source-sans-pro;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.links__item {
+    @include rem(margin-left, halve($base-unit));
+
+    @include mq(small-up) {
+        @include rem(margin-left, $base-unit);
+    }
+}
+
+.links__link {
+    border: none;
+    color: $color-mine-shaft;
+
+    &:hover {
+        color: $color-mine-shaft;
+
+        @include mq(medium-up) {
+            color: $color-lilac-bush;
+        }
+    }
+}
+
+.links__title {
+    vertical-align: middle;
+
+    @include mq(medium-down) {
+        .inlinesvg & {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            overflow: hidden;
+        }
+    }
+}

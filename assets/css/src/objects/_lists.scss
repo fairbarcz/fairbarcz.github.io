@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Object.Lists
+   ========================================================================== */
+
+/**
+ * Objekt odstranujici odrazky a odsazeni ze seznamu.
+ */
+
+.list-bare {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/**
+ * Objekt zobrazujici seznam v jednom radku.
+ */
+
+.list-inline {
+    > li {
+        display: inline-block;
+    }
+}

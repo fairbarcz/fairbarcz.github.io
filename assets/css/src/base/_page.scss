@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Base.Page
+   ========================================================================== */
+
+/*
+ * Nastaveni techto pravidel by melo byt oddelene.
+ * 1. Vlastni nastaveni pozadi vyberu, ktere koresponduje s designem,
+ *    barva textu je nastavena na vychozi barvu textu ale ma smysl ji menit
+ *    v pripade, kdy by byl problem v kontrastu s nastavenym pozadim.
+ * 2. Odstraneni stinu textu pri vyberu.
+ */
+
+$color-selection-text:       $color-text;
+$color-selection-background: #b3d4fc;
+
+::-moz-selection {
+    background: $color-selection-background; /* [1] */
+    color: $color-selection-text; /* [1] */
+    text-shadow: none; /* [2] */
+}
+
+::selection {
+    background: $color-selection-background; /* [1] */
+    color: $color-selection-text; /* [1] */
+    text-shadow: none; /* [2] */
+}
+
+
+/**
+ * 1. Globalni nastaveni `box-sizing` stavu na `border-box`.
+ *    css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * 2. Stranka by vzdy mela vyplnovat minimalne vysku zobrazovaciho zarizeni.
+ * 3. Nastaveni hodnot `font-size` a `line-height` pro cely projekt, vychazejici
+ *    z obecnych promennych. Hodnota `line-height` je vypocitana bez jednotky.
+ * 4. Upraveni chovani scrollbaru tak, aby byl stale viditelny a zabranilo
+ *    se poskakovani pri prechodu na stranku, ktera ma malo obsahu
+ *    a nezobrazi scrollbar prirozene. Tahle funkcionalita vsak muze zpusobovat
+ *    poskakovani pri pouzivani modalnich oken (problem s Bootstrapem).
+ */
+
+html {
+    box-sizing: border-box; /* [1] */
+    min-height: 100%; /* [2] */
+    background-color: $color-background;
+    color: $color-text;
+    font-family: $base-font-family;
+    font-size: 100%;
+    overflow-y: scroll; /* [4] */
+}
+
+body {
+    font-size: $base-font-size; /* [3] */
+    font-weight: 300;
+    line-height: $base-line-height / $base-font-size; /* [3] */
+
+    @include mq(medium-up) {
+        @include rem(font-size, 18px);
+    }
+}

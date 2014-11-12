@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Components.Navbar
+   ========================================================================== */
+
+.navbar__inner {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 0;
+    padding: 0;
+}
+
+.navbar__container {
+    @include rem(max-width, 1280px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.navbar__trigger {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 0.25em;
+    background: $color-white;
+    box-shadow: 0 0 10px rgba(160, 128, 207, 0.4);
+
+    &:focus {
+        outline: none;
+    }
+
+    > i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: $color-lilac-bush;
+        margin-top: -1px;
+        margin-left: -10px;
+        transition: background 0.3s;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            /* Force Hardware Acceleration in WebKit */
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            transition: transform 0.3s, background 0s;
+        }
+
+        &:before {
+            top: -6px;
+            transform: rotate(0);
+        }
+
+        &:after {
+            bottom: -6px;
+            transform: rotate(0);
+        }
+    }
+
+    .no-boxshadow & {
+        border: 1px solid $color-hawkes-blue;
+    }
+
+    &.is-open {
+        border-top: none;
+        border-left: none;
+        box-shadow: none;
+
+        .csstransforms & {
+            > i {
+                background: rgba(185, 181, 252, 0);
+
+                &:before,
+                &:after {
+                    background: $color-lilac-bush;
+                }
+
+                &:before {
+                    top: 0;
+                    transform: rotate(135deg);
+                }
+
+                &:after {
+                    bottom: 0;
+                    transform: rotate(225deg);
+                }
+            }
+        }
+    }
+}

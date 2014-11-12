@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Components.Container
+   ========================================================================== */
+
+.container {
+    @include rem(max-width, 1000px);
+    @include rem(padding-right, $base-unit);
+    @include rem(padding-left, $base-unit);
+    margin: 0 auto;
+
+    @include mq(small-up) {
+        @include rem(padding-right, 3 * $base-unit);
+        @include rem(padding-left, 3 * $base-unit);
+    }
+
+    @media screen and (min-width: 1121px) {
+        padding: 0;
+    }
+}

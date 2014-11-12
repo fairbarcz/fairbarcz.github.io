@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Utils.Aligns
+   ========================================================================== */
+
+/**
+ * Utility pro vertikalni zarovnani
+ * Zavisi na nastaveni `display` hodnoty.
+ */
+
+.u-align-baseline {
+    vertical-align: baseline !important;
+}
+
+.u-align-bottom {
+    vertical-align: bottom !important;
+}
+
+.u-align-middle {
+    vertical-align: middle !important;
+}
+
+.u-align-middle-alt {
+    position: relative !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.u-align-top {
+    vertical-align: top !important;
+}

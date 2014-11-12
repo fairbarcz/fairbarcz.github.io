@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Tools.Mixins
+   ========================================================================== */
+
+/**
+ * Mixina pro generovani media queries z promennych definovanych
+ * v souboru `_defaults.scss` ve slozce `settings`
+ *
+ * .foo {
+ *     color: green;
+ *
+ *     @include mq(small-only) {
+ *         color: red;
+ *     }
+ * }
+ *
+ */
+
+@mixin mq($mq) {
+    @each $breakpoint in $breakpoints {
+        $alias:     nth($breakpoint, 1);
+        $condition: nth($breakpoint, 2);
+
+        @if $mq == $alias and $condition {
+            @media #{$condition} {
+                @content;
+            }
+        }
+    }
+}
+
+
+/**
+ * Mixina pro prevod na rem jednotky s px fallbackem
+ * http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+ *
+ * .foo {
+ *     @include rem(margin, 10, 20, 30, 40);
+ * }
+ *
+ * .foo {
+ *     margin: 160px 320px 480px 640px;
+ *     margin: 10rem 20rem 30rem 40rem;
+ * }
+ *
+ */
+
+@mixin rem($property, $values...) {
+    $max: length($values);
+    $basicSize: strip-unit($base-font-size);
+    $pxValues: '';
+    $remValues: '';
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $pxValues: #{$pxValues + $value}px;
+
+        @if $i < $max {
+            $pxValues: #{$pxValues + " "};
+        }
+    } 
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $remValues: #{$remValues + $value/$basicSize}rem;
+
+        @if $i < $max {
+            $remValues: #{$remValues + " "};
+        }
+    } 
+
+    #{$property}: $pxValues; 
+    #{$property}: $remValues; 
+}

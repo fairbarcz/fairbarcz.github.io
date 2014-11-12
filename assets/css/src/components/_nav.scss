@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Components.Nav
+   ========================================================================== */
+
+.nav__inner {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+}
+
+.nav__container {
+    @include rem(max-width, 1280px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav__list {
+    @include rem(right, $base-unit);
+    @include rem(bottom, $base-unit);
+    @include rem(left, $base-unit);
+    position: absolute;
+    border-radius: 0.25em;
+    background: $color-white;
+    box-shadow: 0 0 10px rgba(160, 128, 207, 0.4);
+    visibility: hidden;
+    overflow: hidden;
+    
+    /* Force Hardware Acceleration in WebKit */
+    backface-visibility: hidden;
+
+    transform: scale(0);
+    transform-origin: 100% 100%;
+    transition: transform 0.3s, visibility 0s 0.3s;
+
+    &.is-visible {
+        visibility: visible;
+        transform: scale(1);
+        transition: transform 0.3s, visibility 0s 0s;
+
+        .no-boxshadow & {
+            border: 1px solid $color-hawkes-blue;
+        }
+    }
+
+    @media screen and (min-width: 321px) {
+        left: auto;
+        width: 280px;
+    }
+
+    @include mq(medium-up) {
+        width: 400px;
+    }
+}
+
+.nav__item {
+    border-top: 1px solid $color-border;
+
+    &:first-child {
+        border-top: none;
+    }
+}
+
+.nav__link {
+    @include rem(padding-top, halve($base-unit));
+    @include rem(padding-right, $base-unit);
+    @include rem(padding-bottom, halve($base-unit));
+    @include rem(padding-left, $base-unit);
+    @include rem(font-size, 16px);
+    display: block;
+    border: none;
+    color: $color-mine-shaft;
+    font-weight: 400;
+
+    &:hover {
+        border: none;
+        color: $color-lilac-bush;
+    }
+
+    @include mq(medium-up) {
+        @include rem(padding, $base-unit);
+    }
+}
